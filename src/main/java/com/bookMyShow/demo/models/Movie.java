@@ -1,10 +1,24 @@
-package com.bookMyShow.demo.models;
+package com.scaler.bookmyshow.models;
 
-import lombok.Getter;
-import lombok.Setter;
+import java.util.List;
 
-@Getter
-@Setter
-public class Movie extends BaseModel{
-    private String name;
+public class Movie extends BaseModel {
+    private String title;
+    private List<Cast> casts;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public List<Cast> getCasts() {
+        return casts;
+    }
+
+    public void setCasts(List<Cast> cast) {
+        this.casts = cast;
+    }
 }

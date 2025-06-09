@@ -1,12 +1,31 @@
-package com.bookMyShow.demo.models;
+package com.scaler.bookmyshow.models;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
-public class ShowSeat extends BaseModel{
+public class ShowSeat extends BaseModel {
     private Show show;
     private Seat seat;
-    private ShowSeat showSeat;
+    private ShowSeatState state;
+
+    public Show getShow() {
+        return show;
+    }
+
+    public void setShow(Show show) {
+        this.show = show;
+    }
+
+    public Seat getSeat() {
+        return seat;
+    }
+
+    public void setSeat(Seat seat) {
+        this.seat = seat;
+    }
+
+    public ShowSeatState getState() {
+        return state;
+    }
+
+    public void setState(ShowSeatState state) {
+        this.state = state;
+    }
 }

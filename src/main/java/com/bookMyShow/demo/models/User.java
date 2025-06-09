@@ -1,13 +1,13 @@
-package com.bookMyShow.demo.models;
+package com.scaler.bookmyshow.models;
 
-import lombok.Getter;
-import lombok.Setter;
-
-import java.util.List;
-@Setter
-@Getter
-public class User extends BaseModel{
-    private String name;
+public class User extends BaseModel {
     private String email;
-    private List<Booking> bookings;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

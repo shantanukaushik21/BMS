@@ -1,6 +1,6 @@
-package com.bookMyShow.demo.models;
+package com.scaler.bookmyshow.models;
 
-public enum BookingStatus{
-    CONFIRMED,
-    CANCLE,
+public enum BookingStatus {
+    PENDING,
+    SUCCESS,
 }

@@ -1,16 +1,13 @@
-package com.bookMyShow.demo.models;
+package com.scaler.bookmyshow.models;
 
-import lombok.Getter;
-import lombok.Setter;
+import java.util.Date;
 
-import java.util.PropertyResourceBundle;
+public abstract class Payment extends BaseModel {
+    private PaymentMethod paymentMethod;
+    private Date timeOfPayment;
+    private double amount;
 
-@Getter
-@Setter
-public class Payment extends BaseModel{
-    private String refNo;
-    private int amount;
-    private PaymentProvider paymentProvider;
-    private PaymentStatus paymentStatus;
-
+    public Payment(PaymentMethod paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
 }

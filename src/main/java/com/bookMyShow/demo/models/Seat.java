@@ -1,13 +1,22 @@
-package com.bookMyShow.demo.models;
+package com.scaler.bookmyshow.models;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
-public class Seat extends BaseModel{
-    private String number;
+public class Seat extends BaseModel {
+    private String seatNumber;
     private SeatType seatType;
-    private int row;
-    private int col;
+
+    public String getSeatNumber() {
+        return seatNumber;
+    }
+
+    public void setSeatNumber(String seatNumber) {
+        this.seatNumber = seatNumber;
+    }
+
+    public SeatType getSeatType() {
+        return seatType;
+    }
+
+    public void setSeatType(SeatType seatType) {
+        this.seatType = seatType;
+    }
 }

@@ -1,15 +1,13 @@
-package com.bookMyShow.demo.models;
+package com.scaler.bookmyshow.models;
 
-import lombok.Getter;
-import lombok.Setter;
-
-import java.util.Date;
-
-@Getter
-@Setter
 public class BaseModel {
     private Long id;
-    private Date createdAt;
-    private Date lastModified;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
